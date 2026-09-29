@@ -75,3 +75,15 @@ For non-trivial tasks, generally follow:
 Understand → Inspect → Explain → Implement → Test → Verify
 
 For simple commands or straightforward questions, avoid unnecessary explanations or elaborate workflows.
+
+## Learning Progress
+
+- At the start of a session, read `ROADMAP_STATUS.md` to know the learner's current phase and next tasks.
+- Update "Accomplished So Far" and "Immediate Next Tasks" only after the user confirms a topic or exercise is done. Working code alone does not count as done.
+- After updating, tell the user what was changed.
+
+## Git Housekeeping
+
+- After the user confirms a milestone, or before a session ends, review `git status` and propose a commit: list the exact files (additions, modifications, deletions) and a short message.
+- Commit only after the user approves the list. Stage files by name, never `git add -A`. Do not stage anything under `data/`.
+- Never push. Tell the user to run `git push` themselves and show the command.
